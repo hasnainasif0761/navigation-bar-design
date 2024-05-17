@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .nav{
+            background: orange;
+            height:45px;
+            display: flex;
+        }
+        .section1 table tr td{
+            padding:11px;
+            color:white;
+            cursor:pointer;
+        }
+        .section1 table tr td:hover{
+            background:white;
+            color:orange;
+        }
+        .section2{
+            display: flex;
+            justify-content: flex-end;
+            width:100%;
+            margin-right: 15px;
+        }
+        .section2 form input{
+            height: 30px;
+            padding: 5px;
+            border: none;
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+        .searchbtn{
+            background: greenyellow;
+            color:white;
+        }
+        .searchbtn:hover{
+            background: white;
+            border: 1px solid greenyellow;
+            color:green;
+            transition: 0.5s;
+            cursor:pointer;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <div class="section1">
+                <table>
+                    <tr>
+                        <td><font face="open sans" size="4"><b>Home</font></td>
+                        <td><font face="open sans" size="4"><b>About</b></font></td>
+                        <td><font face="open sans" size="4"><b>Service</b></font></td>
+                        <td><font face="open sans" size="4"><b>More</b></font></td>
+                    </tr>
+                </table>
+        </div>
+        <div class="section2">
+            <form>
+                <input type="search"placeholder="Search here...."/>
+                <input  type="submit" value="search" class="searchbtn"> 
+            </form>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
